@@ -12,6 +12,43 @@ documentclass[12pt,a4paper]{article}
 
 % Configuración del título y autor
 \title{\textbf{Nombre del proyecto}}
+\author{\textbf{Autor} \\\\
+        \textbf{Fecha} \\\\
+        \textbf{Revisiones} \\\\
+        \textbf{Versiones}}
+\date{\textbf{\today}}
+
+% Configuración de la página
+\usepackage{geometry}
+\geometry{
+  a4paper,
+  total={170mm,257mm},
+  left=20mm,
+  top=20mm,
+}
+
+% Configuración de las secciones
+\usepackage{titlesec}
+\titleformat{\section}[hang]
+  {\normalfont\Large\bfseries}{\thesection}{1em}{}
+\titleformat{\subsection}[hang]
+  {\normalfont\large\bfseries}{\thesubsection}{1em}{}
+\titleformat{\subsubsection}[hang]
+  {\normalfont\normalsize\bfseries}{\thesubsubsection}{1em}{}
+
+% Configuración del índice
+\usepackage{tocloft}
+\renewcommand{\cfttoctitlefont}{\hfill\Large\bfseries}
+\renewcommand{\cftaftertoctitle}{\hfill}
+\renewcommand{\cftsecfont}{\bfseries}
+\renewcommand{\cftsubsecfont}{\normalfont}
+\renewcommand{\cftsubsubsecfont}{\normalfont}
+\setlength{\cftsecindent}{0pt}
+\setlength{\cftsubsecindent}{20pt}
+\setlength{\cftsubsubsecindent}{40pt}
+
+% Configuración del título y autor
+\title{\textbf{Nombre del proyecto}}
 \author{\textbf{Autor} \ \textbf{Fecha} \ \textbf{Revisiones} \ \textbf{Versiones}}
 \date{\textbf{\today}}
 
